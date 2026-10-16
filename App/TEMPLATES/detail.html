@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Detail</title>
+
+    <link rel="stylesheet" href="{% static 'css/book.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+
+    <div class="card border-info border-3 shadow-sm" style="width: 400px;">
+        <div class="card-body p-4">
+            <h2 class="text-center mb-4 text-info">Add Item</h2>
+
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <div class="mb-3">
+                    <label for="image" class="form-label fw-bold">Select Image</label>
+                    <input type="file"  name="image" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="name" class="form-label fw-bold">Name</label>
+                    <input type="text" name="name" class="form-control" placeholder="Enter Name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="prize" class="form-label fw-bold">Prize</label>
+                    <input type="number"  name="prize" class="form-control" placeholder="Enter Prize">
+                </div>
+
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-info text-white w-100 fw-bold">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+</body>
+
+</html>

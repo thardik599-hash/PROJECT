@@ -1,0 +1,165 @@
+  <!-- <form action="" class="form">
+        <div>
+            <input type="file" placeholder="select images" class="w-100">
+            
+        </div>
+        <div>
+            <input type="text" placeholder="Name">
+            
+        </div>
+        </div>
+        <div>
+            <input type="number" placeholder="Prize">
+            
+        </div>
+        <div>
+            <button class="btn btn-info text-white" style="width: 100%;margin-top: 30px;">sumbit</button>
+        </div> 
+    </form> -->
+
+    {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detail</title>
+        <link rel="stylesheet" href="{% static 'css/books.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body class="d-flex justify-content-center align-items-center " style="height: 100vh;">
+
+  
+
+       <form action="" method="post" enctype="multipart/form-data" class="d-flex justify-content-center align-items-center" >
+        <!-- class="d-flex justify-content-center align-items-center" -->
+        {% csrf_token %}
+        <div style="">
+     <div style="height: 380px; width: 400px;" class="border border-success border-3 p-2  " >
+
+
+       
+        <h1 class="text-center">Login</h1>
+        <div>
+            <label for="">select Image</label>
+            <input type="file" >
+        </div>
+        <div>
+            <label for="" class="form-label" >Name</label>
+            <input type="text" class="form-control mb-2" placeholder="Enter  Name" name="Name">
+        </div>
+         <div>
+            <label for="" class="form-label ">Prize</label>
+            <input type="number" class="form-control mb-2" placeholder="Enter  Prize" name="Prize">
+        </div>
+        <div>
+            <button class="btn btn-success" style="width: 100%;text-align: center;margin-top: 20px;">sumbit</button>
+        </div>
+
+       
+
+
+      
+
+
+
+    </div>
+
+
+</form>
+
+
+    
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+from django.shortcuts import redirect, render
+from App.models import Data
+
+
+def project(request):
+    hello = Data.objects.all()
+    context = {'data': hello}
+    return render(request, "project1.html", context)
+
+
+def header2(request):
+    queryset = Data.objects.all()
+    context = {'form': queryset}
+    return render(request, "header2.html", context)
+
+
+def project2(request):
+    hello = Data.objects.all()
+    context = {'data': hello}
+    return render(request, "project2.html", context)
+
+
+def dashboard(request):
+    hello = Data.objects.all()
+    context = {'data': hello}
+    return render(request, "dashboard.html", context)
+
+
+def detail(request):
+    if request.method == "POST":
+        name = request.POST.get("name")
+        prize = request.POST.get("prize")
+        image = request.FILES.get("image")
+
+        Data.objects.create(
+            name=name,
+            prize=prize,
+            image=image,
+        )
+
+        return redirect('dashboard')
+
+    hello = Data.objects.all()
+    context = {'data': hello}
+    return render(request, "detail.html", context)
+
+
+def delete_data(request, id):
+    item = Data.objects.get(id=id)
+    item.delete()
+    return redirect('dashboard')
+
+
+def update2(request, id):
+    item = Data.objects.get(id=id)
+
+    if request.method == "POST":
+        name = request.POST.get("name")
+        prize = request.POST.get("prize")
+        image = request.FILES.get("image")
+
+        item.name = name
+        item.prize = prize
+
+        # Only change image if a new image was uploaded
+        if image:
+            item.image = image
+
+        item.save()
+
+        return redirect('dashboard')
+
+    context = {'detail': item}
+    return render(request, "update2.html", context)

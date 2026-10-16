@@ -1,0 +1,116 @@
+{% extends 'header2.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <!-- https://websitedemos.net/book-store-02/?customize=template  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{% static 'css/book.css' %}">
+</head>
+
+<body>
+
+
+
+    <div class="more">
+        <div class="more2">
+
+            <h2>Books</h2>
+            <p>Porttitor in nibh id aliquet quam aliquam aliquet pulvinar integer dolor quis elementum, dui <br>cursus
+                nisi, nunc viverra nulla fringilla.</p>
+        </div>
+    </div>
+
+    <div class="main-page">
+
+        <div>
+            <h6 class="texx">New Release</h6>
+            <h1 class="fonts">The Sons of the Empire</h1>
+            <p class="fnts">Convallis feugiat enim consectetur mi purus massa sit mus in ac <br> lacus odio ut
+                scelerisque parturient.</p>
+
+            <p class="fnt">Vitae quam interdum turpis faucibus non in quis volutpat eu, amet <br> enim sed mattis augue
+                sed ultrices vestibulum vitae praesent <br>vitae id massa a rhoncus id donec odio.</p>
+
+
+            <button class="outlines"> <a href="" style="text-decoration: none; "><span
+                        style="color: #5F4ECB; font-size: 15px;">Buy Now</span></a></button>
+        </div>
+        <div>
+            <img src="{% static 'img/main.jpg' %}" alt="">
+        </div>
+
+    </div>
+
+    <div class="more-books-title">
+        <p>More Books</p>
+    </div>
+
+    <div class="sellimg-items">
+        {% for data in data %}
+        <div>
+            <img src="{{data.image.url}}" alt="" width="300px" height="450px">
+            <p>Fantasy</p>
+            <h6>{{data.name}}</h6>
+            <span>{{data.prize}}</span>
+        </div>
+        {% endfor %}
+       
+
+    </div>
+</div>
+
+
+    {% comment %} <div class="sellimg-items">
+
+        <div>
+            <img src="{% static 'img/author-book-store-book-img-02-300x450.jpg' %}" alt="">
+            <p>Fantasy</p>
+            <h6>Mists of Algorab</h6>
+            <span>$26.00</span>
+
+        </div>
+        <div>
+            <img src="{% static 'img/author-book-store-book-img-03-300x450.jpg' %}" alt="">
+            <p>Sci-Fi</p>
+            <h6>Cyber Angel</h6>
+            <span>$23.00</span>
+        </div>
+        <div>
+            <img src="{% static 'img/author-book-store-book-img-04-300x450.jpg' %}" alt="">
+            <p>Fantasy</p>
+            <h6>The Return of The King</h6>
+            <div>
+                <span style="text-decoration: line-through;">$25.00</span>
+                <span class="m-0">$20.00</span>
+            </div>
+        </div>
+        <div>
+            <img src="{% static 'img/author-book-store-book-img-05-300x450.jpg' %}" alt="">
+            <p>Fantasy</p>
+            <h6>2024: Sanctuary </h6>
+            <div>
+                <span style="text-decoration: line-through;">$26.00</span>
+                <span class="m-0">$20.00</span>
+            </div>
+        </div>
+
+
+    </div> {% endcomment %}
+
+   
+
+
+    {% endblock %}
+</body>
+
+</html>

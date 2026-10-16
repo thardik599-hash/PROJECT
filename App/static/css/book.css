@@ -1,0 +1,593 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f2f5f7;
+}
+* {
+  font-family: "EB Garamond", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+header {
+  height: 100px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 50px;
+  background-color: white;
+}
+.logo {
+  height: 75px;
+  width: 170px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+  padding-top: 20px;
+}
+li a {
+  text-decoration: none;
+  color: #717378;
+  text-align: center;
+  justify-content: center;
+  /* font-weight: bolder; */
+}
+header ul li a:hover {
+  color: black;
+}
+.order {
+  display: flex;
+  margin-right: 50px;
+}
+
+.buy {
+  height: 47px;
+  width: 106px;
+  background-color: #5f4ecb;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+.buy a {
+  text-decoration: none;
+}
+.buy a span {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 15px;
+}
+main {
+  height: 700px;
+  /* border: 1px solid red; */
+  display: flex;
+  padding-inline: 50px;
+  justify-content: space-between;
+  /* background-color:#F2F5F7; */
+  background-image: url("../img/bg.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tex {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: #5f4ecb;
+  margin-top: 40px;
+}
+.ft {
+  color: #8a8d92;
+  padding-top: 30px;
+  word-spacing: 1px;
+  font-size: 16px;
+}
+.fon {
+  font-size: 88px;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  padding-top: 50px;
+}
+.outline {
+  height: 47px;
+  width: 135px;
+  border: 1px solid #5f4ecb;
+  background-color: white;
+  margin-top: 40px;
+  border-radius: 6px;
+  margin-left: 11px;
+}
+.fonn {
+  font-size: 88px;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  padding-top: 20px;
+}
+.fot {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: #5f4ecb;
+  margin-top: 45px;
+  font-weight: bold;
+}
+.bio {
+  width: 1270px;
+  height: 700px;
+  /* border: 1px solid red; */
+  display: flex;
+  padding-inline: 50px;
+  padding-left: 50px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.name {
+  font-size: 50px;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.know {
+  font-size: 16px;
+  color: #717378;
+}
+.outl {
+  height: 44px;
+  width: 125px;
+  border: 1px solid #5f4ecb;
+  background-color: white;
+  border-radius: 6px;
+  margin-top: 50px;
+  padding: 5px;
+}
+
+.award {
+  height: 200px;
+  display: flex;
+  margin-bottom: 100px;
+  margin-inline: 50px;
+}
+/* .award div{
+    height: 100%;
+    width: 25%;
+    border: 1px solid red;
+    
+} */
+.awrd {
+  height: 100%;
+  width: 25%;
+}
+.award .awrd h5{
+  font-size: 18px;
+  font-weight: bold;
+}
+.arcu {
+  font-size: 14px;
+  /* font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal; */
+  color: #8a8d92;
+}
+.selling-tital {
+  height: 150px;
+  /* border: 1px solid red; */
+  margin-bottom: 50px;
+  text-align: center;
+}
+.h22 {
+  font-size: 48px;
+  font-weight: bold;
+}
+/* h5 {
+  font-weight: bold;
+} */
+.selling-tital p {
+  color: #8a8d92;
+}
+.sellimg-items {
+  padding: 50px 0px;
+  /* height: 600px; */
+  /* width: 1200px; */
+  /* border: 1px solid red; */
+  margin-inline: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* background-size: cover;
+  background-position: center center;
+  back */
+  /* align-items: center; */
+}
+.sellimg-items h6 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.sellimg-items p {
+  color: #8a8d92;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.sellimg-items span {
+  font-size: 15px;
+  font-weight: bolder;
+  color: #717378;
+  margin-left: 2px;
+  margin-bottom: 20px;
+}
+.sellimg-items button a span {
+  color: #5f4ecb;
+  font-size: 15px;
+}
+.shop {
+  height: 50px;
+  /* border: 1px solid darkred; */
+  display: flex;
+  justify-content: center;
+}
+.but {
+  height: 48px;
+  width: 150px;
+  border: 1px solid #5f4ecb;
+
+  background-color: white;
+  border-radius: 6px;
+
+  padding: 5px;
+}
+.pro {
+  margin-top: 100px;
+  height: 650px;
+  width: 100%;
+  /* border: 1px solid red; */
+  background-image:
+    linear-gradient(#00000075, #14141455, #07000075),
+    url("../img/author-book-store-latest-movie-bg-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-position: center center;
+  display: flex;
+}
+.play {
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-yt {
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid black; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* color: white; */
+}
+.pro .play a i {
+  color: rgb(245, 238, 238);
+  font-size: 100px;
+  font-weight: lighter;
+}
+.pro .play-yt i {
+  color: rgb(255, 0, 0);
+  font-size: 25px;
+  font-weight: lighter;
+  /* padding-top: 20px; */
+}
+.pro .play-yt span {
+  color: rgb(249, 247, 247);
+  font-size: 20px;
+  font-weight: bold;
+}
+.pro .play-yt h2 {
+  color: rgb(249, 247, 247);
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.pro .play-yt p {
+  color: rgb(249, 247, 247);
+  font-size: 17px;
+  /* font-weight: bold; */
+  word-spacing: 2px;
+  /* font-family: ; */
+}
+.video-header {
+  height: 100px;
+
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 40px;
+}
+.video-header i {
+  color: rgb(255, 0, 0);
+  font-size: 50px;
+  font-weight: lighter;
+  /* padding-top: 20px; */
+}
+.video-header div div span {
+  font-size: 24px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.video-header div div a i {
+  color: #5f4ecb;
+  font-size: 18px;
+  font-weight: lighter;
+  /* padding-top: 20px; */
+  padding-top: 4px;
+  padding-left: 10px;
+}
+.video-header div div a {
+  color: #5f4ecb;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vid {
+  height: 250px;
+  /* border: 1px solid brown; */
+  display: flex;
+  justify-content: space-evenly;
+}
+.Beyond {
+  height: 240px;
+  width: 350px;
+  background-image: url("../img/author-book-store-adaptation-movie-1.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: white; */
+}
+.vid a {
+  color: white;
+  font-size: 50px;
+}
+.Warrior {
+  height: 240px;
+  width: 350px;
+  background-image: url("../img/author-book-store-adaptation-movie-2.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Fast {
+  height: 240px;
+  width: 350px;
+  background-image: url("../img/author-book-store-adaptation-movie-3.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vid-text {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 150px;
+}
+.vid-text .fast {
+  margin-right: 32px;
+}
+.vid-text p {
+  font-size: 22px;
+}
+
+.latest-audio {
+  height: 450px;
+  /* width: 1200px; */
+  /* border: 1px solid red; */
+  margin-inline: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+.latest-audio div h6 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 16px;
+}
+.latest-audio div a {
+  text-decoration: none;
+  color: #5f4ecb;
+  /* padding-right: 10px; */
+}
+.latest-audio div i {
+  /* text-decoration: none; */
+  color: #5f4ecb;
+  /* padding-right: 10px; */
+}
+
+.doller {
+  height: 300px;
+  /* border: 1px solid #5f4ecb ; */
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.doller div .first {
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 33px;
+}
+.doller div p {
+  color: #565a61;
+  font-size: 16px;
+}
+footer {
+  height: 280px;
+  background-color: #25272d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-inline: 50px;
+}
+footer .icn div a {
+  text-decoration: none;
+}
+.icn div {
+  display: flex;
+  gap: 20px;
+}
+.ul {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  align-items: center;
+  padding-top: 100px;
+}
+.ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  /* font-weight: bolder; */
+}
+.end {
+  height: 80px;
+  background-color: #25272d;
+  text-align: center;
+  padding-left: 40px;
+  padding-top: 60px;
+  font-size: 14px;
+}
+.more {
+  height: 300px;
+  width: 100%;
+  /* border: 1px solid red; */
+  margin-top: 100px;
+  /* background-image: linear-gradient(black,green,blue),url("../img/bg.svg"); */
+  background-size: cover;
+  background-position: center center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.more .more2 {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.more .more2 p {
+  font-size: 16px;
+  color: #717378;
+
+}
+.more .more2 h2 {
+  font-size: 64px;
+    font-family: "EB Garamond", sans-serif;
+ 
+
+}
+.main-page{
+  height: 700px;
+  /* border: 1px solid red; */
+  display: flex;
+  padding-inline: 50px;
+  justify-content: space-between;
+  /* background-color:#F2F5F7; */
+  background-image: url("../img/bg.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texx{
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: #5f4ecb;
+  margin-top: 40px;
+}
+.fonts {
+  font-size: 48px;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  padding-top: 50px;
+}
+.fnt {
+  color: #8a8d92;
+  padding-top: 30px;
+  word-spacing: 1px;
+  font-size: 16px;
+}
+.fnts {
+  color: #565a61;
+  padding-top: 30px;
+  word-spacing: 1px;
+  font-size: 16px;
+}
+.outlines{
+   height: 47px;
+width: 106px;
+  border: 1px solid #5f4ecb;
+  background-color: white;
+  margin-top: 40px;
+  border-radius: 6px;
+  margin-left: 11px;
+}
+.more-books-title{
+  height: 80px;
+  /* border: 1px solid red;  */
+  font-size: 24px;
+  padding-left: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+ .dash{
+  height: 600px;
+  /* border: 1px solid red; */
+  display: flex;
+}
+.side-bar-l{
+  height: 100%;
+  width: 15%;
+ border: 1px solid rgb(3, 3, 3);
+}
+.side-bar-r{
+  height: 100%;
+  width: 85%;
+  border: 1px solid rgb(3, 3, 3);
+}
+/*
+.form{
+  height: 400px;
+  width: 500px;
+  border: 1px solid red;
+}
+.form div input{
+  width: 100%;
+  text-align: center;
+} */

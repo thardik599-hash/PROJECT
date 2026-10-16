@@ -1,0 +1,326 @@
+{% extends 'header2.html' %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Home Book-Store</title>
+    <!-- https://websitedemos.net/book-store-02/?customize=template  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{% static 'css/book.css' %}">
+
+</head>
+
+
+<body>
+
+
+
+    <!-- <header>
+
+        <img class="logo" src="{% static 'img/site-logo.svg' %}" alt="">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">About Author</a></li>
+            <li><a href="#">Blog </a></li>
+            <li><a href="#">Contact </a></li>
+        </ul>
+        <div class="order">
+            <i class="fa-brands fa-sistrix" style="padding-top: 7px;padding-right: 70px;"></i>
+            <b style="font-size: 20px;color: #5F4ECB;">$0.00</b>
+            <i class="fa-solid fa-basket-shopping"
+                style="color: #5F4ECB; padding-top: 3px;padding-left: 15px;font-size: 23px;"></i>
+        </div>
+    </header> -->
+    {% block content %}
+    <main>
+        <div>
+            <h6 class="tex">New Release</h6>
+            <h1 class="fon">The Sons of the <h1 class="fonn"> Empire</h1>
+            </h1>
+            <p class="ft">Justo habitant at augue ac sed proin consectetur ac urna nisl elit <br> nulla facilisis
+                viverra dolor
+                sagittis nisi risus egestas adipiscing <br> nibh euismod.</p>
+
+            <button class="buy"><a href="#"> <span>Buy Now</span></a></button>
+            <button class="outline"> <a href="" style="text-decoration: none; "><span
+                        style="color: #5F4ECB; font-size: 15px;">Read Sample</span></a></button>
+        </div>
+        <div>
+            <img src="{% static 'img/main.jpg' %}" alt="">
+        </div>
+
+    </main>
+
+    <!-- author bio -->
+
+    <div class="bio">
+        <div>
+            <img src="{% static 'img/author.jpg' %}" alt="">
+
+        </div>
+        <div>
+            <h6 class="fot">Biography</h6>
+            <h1 class="name">John Roberts</h1>
+            <p class="know">Tellus tellus mattis pulvinar nulla euismod fermentum rhoncus <br> sed vestibulum neque
+                praesent pharetra ut
+                fames viverra suscipit<br> gravida dictumst volutpat ullamcorper lacus, malesuada enim<br> proin
+                volutpat mattis
+                nunc amet, eget vitae egestas.<br></p>
+
+            <p class="know">Vulputate vulputate eget cursus nam ultricies mauris, malesuada<br> elementum lacus arcu,
+                sit dolor ipsum,
+                ac felis, egestas vel tortor<br> eget aenean nam.</p>
+
+
+            <button class="outl"><a href="" style=" text-decoration: none; "><span style="
+             color: #5F4ECB; font-size: 15px;">Read more</span></a></button>
+        </div>
+
+    </div>
+
+    <!-- Award section -->
+
+
+    <div class="award">
+
+        <div class="awrd">
+            <div>
+                <img src="{% static 'img/ultra.svg' %}" alt="" class="mb-4">
+            </div>
+            <div>
+                <h5>Best Author Awards 2012</h5>
+                <p class="arcu">Arcu pellentesque nisi consectetur netus <br> aenean metus sit mattis sit sed.</p>
+            </div>
+
+        </div>
+        <div class="awrd">
+            <div>
+                <img src="{% static 'img/mega.svg' %}" alt="" class="mb-4">
+            </div>
+            <div>
+                <h5>World's #1 Best-selling Book</h5>
+                <p class="arcu">Diam nibh non in enim nunc suscipit risus, <br> adipiscing aenean quisque viverra.</p>
+            </div>
+
+        </div>
+        <div class="awrd">
+            <div>
+                <img src="{% static 'img/best.svg' %}" alt="" class="mb-4">
+            </div>
+            <div>
+                <h5>NYT Best-selling Author 2014</h5>
+                <p class="arcu">Urna donec dolor bibendum lectus arcu <br> purus eget nisl, ut nisl vitae.</p>
+            </div>
+
+        </div>
+        <div class="awrd">
+            <div>
+                <img src="{% static 'img/ultimate.svg' %}" alt="" class="mb-4">
+            </div>
+            <div>
+                <h5>Best Author Awards 2018
+                </h5>
+                <p class="arcu">Morbi odio sodales et facilisis mi nibh <br> fringilla quis risus ultricies facilisis.
+                </p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <!-- best selling tital -->
+    <div class="selling-tital">
+        <h2 class="h22">Best Selling Books</h2>
+        <p> Vulputate vulputate eget cursus nam ultricies mauris, malesuada elementum lacus arcu, sit dolor <br> ipsum,
+            ac felis, egestas vel tortor eget aenean.</p>
+
+
+    </div>
+
+    <div class="sellimg-items">
+        <div>
+            <img src="{% static 'img/aplex.jpg' %}" alt="">
+            <p>Fantasy</p>
+            <h6>The Born of APLEX</h6>
+            <span>$26.00</span>
+        </div>
+        <div>
+            <img src="{% static 'img/mirror.jpg' %}" alt="">
+            <p>Fantasy</p>
+            <h6>The Throned Mirror</h6>
+            <span>$23.00</span>
+        </div>
+        <div>
+            <img src="{% static 'img/ark.jpg' %}" alt="">
+            <p>Fantasy</p>
+            <h6>Ark Forging</h6>
+            <div>
+                <span style="text-decoration: line-through;">$25.00</span>
+                <span class="m-0">$20.00</span>
+            </div>
+        </div>
+        <div>
+            <img src="{% static 'img/main2.jpg' %}" alt="">
+            <p>Fantasy</p>
+            <h6>The Sons of the Empire</h6>
+            <div>
+                <span style="text-decoration: line-through;">$26.00</span>
+                <span class="m-0">$20.00</span>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="shop">
+        <button class="but"><a href="" style=" text-decoration: none; background-color: white;"><span
+                    style=" color: #5f4ecb; ">Shop All
+                    Books</span></a></button>
+    </div>
+
+    <div class="pro">
+        <div class="play">
+            <a href="#"><i class="bi bi-play-circle"></i>
+            </a>
+        </div>
+        <div class="play-yt">
+            <div>
+                <div class="d-flex  align-items-center">
+                    <i aria-hidden="true" class="fab fa-youtube"></i>
+                    <span class="ms-3">Latest On YouTube</span>
+                </div>
+                <h2>The Descendant of Hope</h2>
+                <p>Tellus tellus mattis pulvinar nulla euismod fermentum rhoncusv <br> sed vestibulum neque praesent
+                    pharetra ut fames viverra suscipit<br> gravida dictumst volutpat ullamcorper lacus.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="video-header">
+        <div>
+            <div class="d-flex justify-content-center align-items-center">
+                <i aria-hidden="true" class="fab fa-youtube"></i>
+                <span class=""> More YouTube Videos</span>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <a href="#">View All Videos <i class="bi bi-arrow-right" class="arr"></i></a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- video sec -->
+
+    <div class="vid">
+
+        <div class="Beyond"><a href="#"><i class="bi bi-play-circle"></i></a></div>
+
+        <div class="Warrior"><a href="#"><i class="bi bi-play-circle"></i></a></div>
+
+        <div class="Fast "><a href="#"><i class="bi bi-play-circle"></i></a></div>
+
+    </div>
+
+    <div class="vid-text">
+        <p class="ms-4">Beyond the Horizon</p>
+        <p>The Iron Warrior</p>
+        <p class="fast">Fast Forwarded</p>
+
+    </div>
+
+
+
+    <!-- latest content -->
+
+    <div class="selling-tital">
+        <h2 class="h22">Latest Audiobook</h2>
+        <p> Vulputate vulputate eget cursus nam ultricies mauris, malesuada elementum lacus arcu, sit dolor <br>ipsum,
+            ac felis, egestas vel tortor eget aenean.</p>
+
+
+    </div>
+
+    <!-- latest Audiobook -->
+
+    <div class="latest-audio">
+        <div>
+            <img src="{% static 'img/author-book-store-audio-book-img-1.jpg' %}" alt="">
+
+            <h6>Teebo: A Fallen Empire</h6>
+
+            <div class="d-flex gap-2">
+                <i class="bi bi-play-circle-fill"></i>
+                <a href="#"> Listen Now</a>
+            </div>
+
+
+        </div>
+        <div>
+            <img src="{% static 'img/author-book-store-audio-book-img-2.jpg' %}" alt="">
+
+            <h6>Future and Beyond</h6>
+            <div class="d-flex gap-2">
+                <i class="bi bi-play-circle-fill"></i>
+                <a href="#"> Listen Now</a>
+            </div>
+        </div>
+        <div>
+            <img src="{% static 'img/author-book-store-audio-book-img-3.jpg' %}" alt="">
+
+            <h6>The Darkside of IT</h6>
+            <div class="d-flex gap-2">
+                <i class="bi bi-play-circle-fill"></i>
+                <a href="#"> Listen Now</a>
+            </div>
+        </div>
+        <div>
+            <img src="{% static 'img/author-book-store-audio-book-img-4.jpg' %}" alt="">
+
+            <h6>Data Has a Better Idea</h6>
+            <div class="d-flex gap-2">
+                <i class="bi bi-play-circle-fill"></i>
+                <a href="#"> Listen Now</a>
+            </div>
+        </div>
+    </div>
+
+
+
+{% comment %} 
+    <div class="doller">
+        <div>
+            <h2 class="first ">Be the first to know</h2>
+            <p> Lectus amet scelerisque fusce est venenatis, eget enim dolor<br>amet vitae pharetra</p>
+        </div>
+
+    </div> {% endcomment %}
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    {% endblock %}
+</body>
+
+</html>
